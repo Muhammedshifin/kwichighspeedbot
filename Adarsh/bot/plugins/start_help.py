@@ -185,8 +185,7 @@ async def help_handler(bot, message):
         )
     )
 
-
-@StreamBot.on_message(filters.command('channels') & filters.user(ADMINS))
+@StreamBot.on_message(filters.command('about') & filters.private)
 async def about_handler(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
@@ -228,17 +227,16 @@ async def about_handler(bot, message):
     await message.reply_photo(
             photo="https://te.legra.ph/file/8dfe7256883cbc0190478.jpg",
             caption="""<b>sᴏᴍᴇ ʜɪᴅᴅᴇɴ ᴅᴇᴛᴀɪʟs😜</b>
-
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
-┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : <a href='https://t.me/kwicbotupdates'>𝗞𝗪𝗜𝗖 𝗛𝗜𝗚𝗛 𝗦𝗣𝗘𝗘𝗗 𝗕𝗢𝗧</a></b>
-┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/kwicbotupdates'>𝗞𝗪𝗜𝗖𝗕𝗢𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦</a></b>
-┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/kwic2002'>𝗞𝗪𝗜𝗖</a></b>
-┣⪼<b>sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
-┣⪼<b>ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
-┣⪼<b>ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
-┣⪼<b>sᴏᴜʀᴄᴇ-ᴄᴏᴅᴇ : <a href='https://github.com/kwicfiletolinkbot'>𝗞𝗪𝗜𝗖𝗕𝗢𝗧𝗦</a></b>
-┣⪼<b>𝙼𝚘𝚟𝚒𝚎-𝙶𝚛𝚘𝚞𝚙 : <a href='https://t.me/MoviesNowV2'>𝙼𝚘𝚟𝚒𝚎𝚜𝙽𝚘𝚠𝚅2</a></b>
+┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : 𝙵𝚒𝚕𝚎 𝚃𝚘 𝙻𝚒𝚗𝚔⚡️</b>
+┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : Nothing </b>
+┣⪼<b>sᴜᴘᴘᴏʀᴛ :Nothing </b>
+┣⪼<b>sᴇʀᴠᴇʀ :  Nothing </b>
+┣⪼<b>ʟɪʙʀᴀʀʏ :Nothing </b>
+┣⪼<b>ʟᴀɴɢᴜᴀɢᴇ: Nothing </b>
+┣⪼<b>sᴏᴜʀᴄᴇ-ᴄᴏᴅᴇ :Nothing </b>
+┣⪼<b>𝙼𝚘𝚟𝚒𝚎-𝙶𝚛𝚘𝚞𝚙 :Nothing </b>
 ┃
 <b>╰━━━━━━━〔ᴘʟᴇᴀsʀ sᴜᴘᴘᴏʀᴛ〕</b>""",
   
@@ -250,3 +248,4 @@ async def about_handler(bot, message):
             ]
         )
     )
+
