@@ -225,7 +225,7 @@ async def about_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_photo(
-            photo="https://te.legra.ph/file/8dfe7256883cbc0190478.jpg",
+            photo="https://telegra.ph/file/9bafe528e76630cbc33f6.jpg",
             caption="""<b>sᴏᴍᴇ ʜɪᴅᴅᴇɴ ᴅᴇᴛᴀɪʟs😜</b>
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
@@ -243,8 +243,8 @@ async def about_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("⚡ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ⚡", url="https://t.me/kwicbotupdates"), InlineKeyboardButton("📺 24/7 𝙼𝙾𝚅𝙸𝙴𝚂 📺", url="https://t.me/MoviesNowV2")],
-                [InlineKeyboardButton("💌 𝙼𝙾𝚅𝙸𝙴𝙱𝙾𝚃 💌 ", url="https://t.me/KWICVER2bot")]
+                [InlineKeyboardButton("⚡ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ⚡", url="https://t.me/botsupportmst"), InlineKeyboardButton("📺 24/7 𝙼𝙾𝚅𝙸𝙴𝚂 📺", url="https://t.me/MaSTeR_filims")],
+                [InlineKeyboardButton("💌 𝙼𝙾𝚅𝙸𝙴𝙱𝙾𝚃 💌 ", url="https://t.me/Elsaa_MsT_bot")]
             ]
         )
     )
